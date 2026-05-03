@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 10% 11%;     /* #1A1C1E */
+    --foreground: 210 20% 98%;     /* #F8F9FA */
+    
+    --muted: 210 10% 20%;
+    --muted-foreground: 210 20% 70%;
+    
+    --popover: 210 10% 11%;
+    --popover-foreground: 210 20% 98%;
+
+    --card: 210 10% 14%;
+    --card-foreground: 210 20% 98%;
+    
+    --border: 37 90% 51%;         /* Ginger Zest */
+    --input: 210 10% 20%;
+    
+    --primary: 37 90% 51%;        /* #F39C12 */
+    --primary-foreground: 0 0% 0%;
+    
+    --secondary: 210 10% 14%;
+    --secondary-foreground: 210 20% 98%;
+    
+    --accent: 145 63% 49%;         /* #2ECC71 */
+    --accent-foreground: 0 0% 0%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+
+    --ring: 37 90% 51%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-wide;
+  }
+}
